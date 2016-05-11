@@ -184,7 +184,7 @@
     :binding "E"
     :body
     (progn
-      (add-hook 'erc-mode #'(lambda ()
+      (add-hook 'erc-mode-hook #'(lambda ()
                               (persp-add-buffer (current-buffer))))
       (call-interactively 'erc)))
   ;; do not save erc buffers
